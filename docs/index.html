@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Prologue by HTML5 UP</title>
+		<title>Predicting Food Inspection Outcomes of Chicago Restaurants</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -25,7 +25,6 @@
 						<div id="logo">
 							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
 							<h1 id="title">Project</h1>
-							<p>Hyperspace Engineer</p>
 						</div>
 
 					<!-- Nav -->
@@ -45,9 +44,10 @@
 							-->
 							<ul>
 								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Background</span></a></li>
+								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-cogs">Predictors</span></a></li>
+								<li><a href="#model" id="model-link" class="skel-layers-ignoreHref"><span class="icon fa-filter">Model Selection</span></a></li>
+								<li><a href="#biblio" id="biblio-link" class="skel-layers-ignoreHref"><span class="icon fa-book">Bibliography</span></a></li>
 							</ul>
 						</nav>
 
@@ -76,128 +76,191 @@
 						<div class="container">
 
 							<header>
-								<h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a> responsive<br />
-								site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
-								<p>Ligula scelerisque justo sem accumsan diam quis<br />
-								vitae natoque dictum sollicitudin elementum.</p>
+								<h2 class="alt">Predicting Food Inspection Outcomes
+								<br /> of Chicago Restaurants</h2>
+								<h4>Evan Brown, Felix Ruano, Gil Wassermann
+								<br />Data Science, Fall 2016</h4>
 							</header>
 
 							<footer>
-								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
+								<a href="#portfolio" class="button scrolly">View Project</a>
 							</footer>
 
 						</div>
 					</section>
 
-				<!-- Portfolio -->
+				<!-- Background -->
 					<section id="portfolio" class="two">
 						<div class="container">
 
 							<header>
-								<h2>Portfolio</h2>
+								<h2>Background</h2>
 							</header>
 
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-							fusce hendrerit lacus ridiculus.</p>
+							<p>In 2014, Chicago’s Department of Innovation and Technology and Allstate’s Quantitative Research & Analytics came together in order to create a model to use publicly available data to predict food facility inspection outcomes. The project was motivated by the staggering statistic that assessing around 16,000 food establishments was tasked to only 36 inspectors. Before this project, food inspections were scheduled in a quasi-random way, the only criterion of which was that each facility was visited in the city-mandated time-frame. While this system ensured that every facility was checked, there was a very real possibility that an establishment with a critical health code violation could continue to operate for a long stretch of time, simply due to the scheduling of inspections. Given the potential for severe illness, Chicago rightly identified this as a public heath issue and turned to data science to solve this problem.</p>
 
-							<div class="row">
-								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-										<header>
-											<h3>Ipsum Feugiat</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>Rhoncus Semper</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-										<header>
-											<h3>Magna Nullam</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<header>
-											<h3>Natoque Vitae</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u$ 12u$(mobile)">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-										<header>
-											<h3>Dolor Penatibus</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-										<header>
-											<h3>Orci Convallis</h3>
-										</header>
-									</article>
-								</div>
-							</div>
+							<p>The goal of the project was to devise a statistically predictive and robust model that could identify the establishments with the highest potential for violating critical health codes. The most likely potential offenders could then be scheduled for inspection and barred from distriution first, minimizing the amount of time the public is exposed to potentially hazardous foodstuffs.</p>
+
+							<p>The outcome of the project was quite staggering. According to the Chicago/Allstate project's website the number of establishments with critical violations caught in a two month period increased from 55% to 69% through use of the data-driven workflow. Another impressive statistic is the establishments with critical violations were, on average caught about a week earlier.Although Chicago/Allstate project yielded amazing results, we are going to try our hand at this project. Hopefully, by using different predictor variables and employing different statistucal techniques we can propose an alternative model.</p>
 
 						</div>
 					</section>
 
-				<!-- About Me -->
+				<!-- Predictors -->
 					<section id="about" class="three">
 						<div class="container">
 
 							<header>
-								<h2>About Me</h2>
+								<h2>Predictors</h2>
 							</header>
 
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+							<p>One of the most interesting aspects of the Chicago/Allstate project were the plethora of different, and seemingly unrelated predictors that were leveraged by their model. Therefore predictor selection was a key component of our project.</p>
 
-							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-							ornare iaculis.</p>
+							<header>
+								<h3>Weather</h3>
+							</header>
+
+							<p>Chicago is the Windy City. It can also get excruciatingly cold. One could imagine that restaurant employees would be less than thrilled to perform necessary hygiene proceedures in these conditions. Also, it might be possible that the inspectors themselves are less likely to make site visits in these conditions, which could induce lax behaviour on the part of the establishment owners.</p>
+
+							<p>While maximum and minimum past temperatures are useful metrics, we need a robust method in order to predict future temperatures as a function of inspection dates. Thankfully, temperatures are cyclical, which allows us to fit autoregressive time series models. After investigation of the time series' autocorrelation and partial autocorrelation functions, we fit an AR(12) model to monthly aggregates of the data. Below are our fits:</p>
+
+							<a href="#" class="image centered"><img src="images/arma.png" alt="" /></a>
+
+							<header>
+								<h3>Sanitary Code Complaints</h3>
+							</header>
+
+							<p>One predictor in our model was created by seeing how many sanitary complaints have been accumulated in each ZIP code using the City of Chicago Open Data Portal since January 1st, 2011. This can be seen as a proxy for the importance placed on hygiene in each neighborhood. NB: This figure has been grouped by ward, which roughly equate to, but are slightly more granular, than ZIP code boundaries.</p>
+
+							<a href="#" class="image centered"><img src="images/largenegcoef.png" alt="" /></a>
+
+							<header>
+								<h3>Particular Violations</h3>
+							</header>
+
+							<p>One important result to come out of the model is that not all violations are created equal. In fact, there are some violations that lead to failed inspections while others do not. The chart below presents the 20 larges negative coefficients of a regularized logistic regression model on the data.</p>
+
+							<p>As we can see particular types of violation make up the most negative coefficients, which are those that push the value of a point towards 0, signifying a Fail. Let us look into what some of these complaints entail:
+							Code 14 : Previous violation uncorrected
+							Code 13 : Evidence of rodent or insect infestation, birds, turtles or other animals
+							Code 3 : Potentially Hazardous Food does not meet temperature requirement during storage, preparation, display and service</p>
+
+							<p>It is clear that these are particularly critical violations and past incidents of these at a particular restaurant are a clear indication of a lack of a culture of hygiene.</p>
+
+							<a href="#" class="image centered"><img src="images/largenegcoefs.png" alt="" /></a>
+
+							<header>
+								<h3>Type of Inspection</h3>
+							</header>
+
+							<p>Another key component of our model is the type of inspection that is being carried out. The chart below presents the most positive coefficients of a regularized logistic regression model on the data.</p>
 
 						</div>
 					</section>
 
-				<!-- Contact -->
-					<section id="contact" class="four">
+				<!-- Model Selection -->
+					<section id="model" class="two">
 						<div class="container">
 
 							<header>
-								<h2>Contact</h2>
+								<h2>Model Selection</h2>
 							</header>
 
-							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+							<p>There were three main models that we identified and investigated for this project. These were a Logistic Regression, a Multiclass Logistic Regression (where we made a third class for Pass with Conditions) and a Random Forest. The latter model formed the foundation of the Chicago/Allstate model. Tuning these models with five-fold cross-validation and the evaluating the results yields the following:</p>
 
-							<form method="post" action="#">
-								<div class="row">
-									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="12u$">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="12u$">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
+							<header>
+								<h2><b>The matrix of results from the final poster</b></h2>
+							</header>
+
+							<table cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+
+								<!-- Table Header -->
+								<thead>
+								<tr>
+									<th>Task Details</th>
+								<th>Progress</th>
+								<th>Vital Task</th>
+								</tr>
+								</thead>
+								<!-- Table Header -->
+
+								<!-- Table Body -->
+								<tbody>
+
+									<tr>
+										<td>Create pretty table design</td>
+										<td>100%</td>
+										<td>Yes</td>
+									</tr><!-- Table Row -->
+
+									<tr class="even">
+										<td>Take the dog for a walk</td>
+										<td>100%</td>
+										<td>Yes</td>
+									</tr><!-- Darker Table Row -->
+
+									<tr>
+										<td>Waste half the day on Twitter</td>
+										<td>20%</td>
+										<td>No</td>
+									</tr>
+
+									<tr class="even">
+										<td><a href="#yep-iit-doesnt-exist">Hyperlink 	Example</a></td>
+										<td>80%</td>
+										<td><a href="#inexistent-id">Another</a></td>
+									</tr>
+
+								</tbody>
+								<!-- Table Body -->
+
+							</table>
+
+							<header>
+								<h3>Metric</h3>
+							</header>
+
+							<p>For this project, we selected models based on metrics that are more granular than an accuracy score. For the purposes of this question, the two types of misclassification are not equivalent.</p>
+
+							<p>For the case of the false negative, let us imagine the outcome of a restaurant that has been predicted to fail, but actually passes. As a result of this model, an inspector would be sent to this facility quickly and then be able to ascertain that the establishment poses no health risk. The potential downside of this is unecessary expenditure of resources.</p>
+
+							<p>For the case of the false positive, we see a very different story. This type of restaurant would be predicted to pass, but are actually falling foul of a critical violation. A facility in this position would be a low priority inspection target, and therefore would be visited later. In this extra time taken to inspect the facility, they could diseminate potentially hazardous foods to the population.</p>
+
+							<p>In light of this we have selected our model to decrease the number of false positives in the model under five-fold cross-validation.</p>
+
+							<header>
+								<h3>Final Model</h3>
+							</header>
+
+							<p>In light of the above results, we can conclude that the most effective model to use in this scenario is the tuned $\ell 1$ Logistic Regression. There are several reasons for this:</p>
+
+							<p>The model is easily interpretable. The values of the coefficients can be used to explain the importance of different predictors to policy-makers in order to justify budget allocations.</p>
+
+							<p>The model takes in a large number of predictors. LASSO regularization reduces the number of predictors used in order to suppress noise from unimportant predictors.</p>
+
+							<p>There is likely to be a response to the data-driven workflow from facility operators. This model is lightweight enough to be refit easily to accomodate this response.</p>
+
+							<p>Shown to be less prone to overfitting than the Random Forest model when applied to the whole dataset.
+							
 
 						</div>
 					</section>
+
+				<!-- Bibliography, Links and Further Reading -->
+					<section id="biblio" class="three">
+						<div class="container">
+
+							<header>
+								<h2>Bibliography, Links and Further Reading</h2>
+							</header>
+
+							<p>https://chicago.github.io/food-inspections-evaluation/ : Main page for the Chicago/Allstate project</p>
+
+							<p>https://github.com/Chicago/food-inspections-evaluation : Open source code in R for the Chicago/Allstate project</p>
+
+							<p>http://www.citylab.com/cityfixer/2016/01/chicago-is-predicting-food-safety-violations-why-arent-other-cities/422511/ : Article about the Chicago/Allstate project.</p>
+
+							<p>https://data.cityofchicago.org/ : City of Chicago Open Data Portal</p>
 
 			</div>
 
