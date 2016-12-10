@@ -117,3 +117,25 @@
 	});
 
 })(jQuery);
+
+	google.charts.load('current', {'packages':['corechart']});
+	google.charts.setOnLoadCallback(drawChart);
+	function drawChart() {
+
+	  var data = google.visualization.arrayToDataTable([
+	    ['Label', 'Percentage'],
+	    ['Pass',     59.09],
+	    ['Pass with conditions',      9.31],
+		['Fail',      31.60],
+	  ]);
+
+	  var options = {
+	    title: 'Breakdown of Inspections',
+	    colors:['#222348','#a0cee8','#a25163'],
+	    backgroundColor: 'transparent',
+	  };
+
+	  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+	  chart.draw(data, options);
+	}
