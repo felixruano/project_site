@@ -125,6 +125,10 @@
 
 							<a href="#" class="image centered"><img src="images/arma.png" alt="" /></a>
 
+							<p>An AR(12) model was chosen after examination of an autocorrelogram and partial autocorrelogram of the data. We noticed that the-martial autocorrelogram cut off at the 365th lag of daily data. This suggests that an AR(365) model should be used. However, fitting 365 model parameters would most likely overfit the available data. We needed a more parsimonious solution. We then attempted to implement a SARIMA(0,0,0)x(1,0,0)365 model in order to reduce the number of fitted coefficients. Here, we ran into a logistical issue, which was that there was no available Python package that could perform this analysis (the SARIMAX model for `statsmodels` is currently under development). As a compromise, we settled on an ARIMA(12,0,0) (another way of describing the AR(12) model) model fit using monthly-aggregated weather data.</p>
+
+							<p>This AR model is useful as it allows us to predict future values of maximum and minimum temperatures.</p>
+
 							<header>
 								<h3>Sanitary Code Complaints</h3>
 							</header>
